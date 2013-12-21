@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F08852818079ADB00736761 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08852718079ADB00736761 /* Foundation.framework */; };
+		3F08852A18079ADB00736761 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08852918079ADB00736761 /* CoreGraphics.framework */; };
+		3F08852C18079ADB00736761 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08852B18079ADB00736761 /* UIKit.framework */; };
+		3F08852E18079ADB00736761 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08852D18079ADB00736761 /* SpriteKit.framework */; };
+		3F08853418079ADB00736761 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F08853218079ADB00736761 /* InfoPlist.strings */; };
+		3F08853618079ADB00736761 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F08853518079ADB00736761 /* main.m */; };
+		3F08853A18079ADB00736761 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F08853918079ADB00736761 /* AppDelegate.m */; };
+		3F08853D18079ADB00736761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F08853B18079ADB00736761 /* Main.storyboard */; };
+		3F08854018079ADB00736761 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F08853F18079ADB00736761 /* ViewController.m */; };
+		3F08854318079ADB00736761 /* dungeonScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F08854218079ADB00736761 /* dungeonScene.m */; };
+		3F08854518079ADB00736761 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F08854418079ADB00736761 /* Spaceship.png */; };
+		3F08854718079ADB00736761 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F08854618079ADB00736761 /* Images.xcassets */; };
+		3F08854E18079ADB00736761 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08854D18079ADB00736761 /* XCTest.framework */; };
+		3F08854F18079ADB00736761 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08852718079ADB00736761 /* Foundation.framework */; };
+		3F08855018079ADB00736761 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08852B18079ADB00736761 /* UIKit.framework */; };
+		3F08855818079ADB00736761 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F08855618079ADB00736761 /* InfoPlist.strings */; };
+		3F08855A18079ADB00736761 /* DungeonSKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F08855918079ADB00736761 /* DungeonSKTests.m */; };
+		3F08857418079D0F00736761 /* SFMT.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F08857218079D0F00736761 /* SFMT.c */; };
+		3F08857718079D2F00736761 /* TMXGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F08857618079D2F00736761 /* TMXGenerator.m */; };
+		3F08857A1807B8CC00736761 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0885791807B8CC00736761 /* JSTileMap.m */; };
+		3F08857D1807B8DB00736761 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F08857C1807B8DB00736761 /* LFCGzipUtility.m */; };
+		3F08857F1807B8E800736761 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08857E1807B8E800736761 /* libz.dylib */; };
+		3F0885811807BE5800736761 /* caveAtlas.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0885801807BE5800736761 /* caveAtlas.png */; };
+		3F0885841807BE9900736761 /* cencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F0885821807BE9900736761 /* cencode.c */; };
+		3FCA52201864D3990071725B /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA521F1864D3990071725B /* MenuController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F08855118079ADB00736761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F08851C18079ADB00736761 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F08852318079ADB00736761;
+			remoteInfo = DungeonSK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F08852418079ADB00736761 /* DungeonSK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DungeonSK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F08852718079ADB00736761 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F08852918079ADB00736761 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3F08852B18079ADB00736761 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F08852D18079ADB00736761 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		3F08853118079ADB00736761 /* DungeonSK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DungeonSK-Info.plist"; sourceTree = "<group>"; };
+		3F08853318079ADB00736761 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F08853518079ADB00736761 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F08853718079ADB00736761 /* DungeonSK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DungeonSK-Prefix.pch"; sourceTree = "<group>"; };
+		3F08853818079ADB00736761 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F08853918079ADB00736761 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F08853C18079ADB00736761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F08853E18079ADB00736761 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F08853F18079ADB00736761 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F08854118079ADB00736761 /* dungeonScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dungeonScene.h; sourceTree = "<group>"; };
+		3F08854218079ADB00736761 /* dungeonScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dungeonScene.m; sourceTree = "<group>"; };
+		3F08854418079ADB00736761 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		3F08854618079ADB00736761 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F08854C18079ADB00736761 /* DungeonSKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DungeonSKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F08854D18079ADB00736761 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3F08855518079ADB00736761 /* DungeonSKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DungeonSKTests-Info.plist"; sourceTree = "<group>"; };
+		3F08855718079ADB00736761 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F08855918079ADB00736761 /* DungeonSKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonSKTests.m; sourceTree = "<group>"; };
+		3F08856518079D0F00736761 /* SFMT-alti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-alti.h"; sourceTree = "<group>"; };
+		3F08856618079D0F00736761 /* SFMT-params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params.h"; sourceTree = "<group>"; };
+		3F08856718079D0F00736761 /* SFMT-params11213.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params11213.h"; sourceTree = "<group>"; };
+		3F08856818079D0F00736761 /* SFMT-params1279.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params1279.h"; sourceTree = "<group>"; };
+		3F08856918079D0F00736761 /* SFMT-params132049.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params132049.h"; sourceTree = "<group>"; };
+		3F08856A18079D0F00736761 /* SFMT-params19937.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params19937.h"; sourceTree = "<group>"; };
+		3F08856B18079D0F00736761 /* SFMT-params216091.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params216091.h"; sourceTree = "<group>"; };
+		3F08856C18079D0F00736761 /* SFMT-params2281.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params2281.h"; sourceTree = "<group>"; };
+		3F08856D18079D0F00736761 /* SFMT-params4253.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params4253.h"; sourceTree = "<group>"; };
+		3F08856E18079D0F00736761 /* SFMT-params44497.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params44497.h"; sourceTree = "<group>"; };
+		3F08856F18079D0F00736761 /* SFMT-params607.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params607.h"; sourceTree = "<group>"; };
+		3F08857018079D0F00736761 /* SFMT-params86243.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params86243.h"; sourceTree = "<group>"; };
+		3F08857118079D0F00736761 /* SFMT-sse2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-sse2.h"; sourceTree = "<group>"; };
+		3F08857218079D0F00736761 /* SFMT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SFMT.c; sourceTree = "<group>"; };
+		3F08857318079D0F00736761 /* SFMT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMT.h; sourceTree = "<group>"; };
+		3F08857518079D2F00736761 /* TMXGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXGenerator.h; sourceTree = "<group>"; };
+		3F08857618079D2F00736761 /* TMXGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXGenerator.m; sourceTree = "<group>"; };
+		3F0885781807B8CC00736761 /* JSTileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
+		3F0885791807B8CC00736761 /* JSTileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTileMap.m; sourceTree = "<group>"; };
+		3F08857B1807B8DB00736761 /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
+		3F08857C1807B8DB00736761 /* LFCGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCGzipUtility.m; sourceTree = "<group>"; };
+		3F08857E1807B8E800736761 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3F0885801807BE5800736761 /* caveAtlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caveAtlas.png; sourceTree = "<group>"; };
+		3F0885821807BE9900736761 /* cencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cencode.c; sourceTree = "<group>"; };
+		3F0885831807BE9900736761 /* cencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cencode.h; sourceTree = "<group>"; };
+		3FCA521E1864D3990071725B /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		3FCA521F1864D3990071725B /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F08852118079ADB00736761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F08857F1807B8E800736761 /* libz.dylib in Frameworks */,
+				3F08852A18079ADB00736761 /* CoreGraphics.framework in Frameworks */,
+				3F08852C18079ADB00736761 /* UIKit.framework in Frameworks */,
+				3F08852E18079ADB00736761 /* SpriteKit.framework in Frameworks */,
+				3F08852818079ADB00736761 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F08854918079ADB00736761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F08854E18079ADB00736761 /* XCTest.framework in Frameworks */,
+				3F08855018079ADB00736761 /* UIKit.framework in Frameworks */,
+				3F08854F18079ADB00736761 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F08851B18079ADB00736761 = {
+			isa = PBXGroup;
+			children = (
+				3F08852F18079ADB00736761 /* DungeonSK */,
+				3F08855318079ADB00736761 /* DungeonSKTests */,
+				3F08852618079ADB00736761 /* Frameworks */,
+				3F08852518079ADB00736761 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F08852518079ADB00736761 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F08852418079ADB00736761 /* DungeonSK.app */,
+				3F08854C18079ADB00736761 /* DungeonSKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F08852618079ADB00736761 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F08857E1807B8E800736761 /* libz.dylib */,
+				3F08852718079ADB00736761 /* Foundation.framework */,
+				3F08852918079ADB00736761 /* CoreGraphics.framework */,
+				3F08852B18079ADB00736761 /* UIKit.framework */,
+				3F08852D18079ADB00736761 /* SpriteKit.framework */,
+				3F08854D18079ADB00736761 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F08852F18079ADB00736761 /* DungeonSK */ = {
+			isa = PBXGroup;
+			children = (
+				3F08853B18079ADB00736761 /* Main.storyboard */,
+				3F08853818079ADB00736761 /* AppDelegate.h */,
+				3F08853918079ADB00736761 /* AppDelegate.m */,
+				3F08853E18079ADB00736761 /* ViewController.h */,
+				3F08853F18079ADB00736761 /* ViewController.m */,
+				3FCA521E1864D3990071725B /* MenuController.h */,
+				3FCA521F1864D3990071725B /* MenuController.m */,
+				3F08854118079ADB00736761 /* dungeonScene.h */,
+				3F08854218079ADB00736761 /* dungeonScene.m */,
+				3F08854418079ADB00736761 /* Spaceship.png */,
+				3F0885801807BE5800736761 /* caveAtlas.png */,
+				3F08854618079ADB00736761 /* Images.xcassets */,
+				3F08856318079CE600736761 /* External Source */,
+				3F08853018079ADB00736761 /* Supporting Files */,
+			);
+			path = DungeonSK;
+			sourceTree = "<group>";
+		};
+		3F08853018079ADB00736761 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F08853118079ADB00736761 /* DungeonSK-Info.plist */,
+				3F08853218079ADB00736761 /* InfoPlist.strings */,
+				3F08853518079ADB00736761 /* main.m */,
+				3F08853718079ADB00736761 /* DungeonSK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F08855318079ADB00736761 /* DungeonSKTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F08855918079ADB00736761 /* DungeonSKTests.m */,
+				3F08855418079ADB00736761 /* Supporting Files */,
+			);
+			path = DungeonSKTests;
+			sourceTree = "<group>";
+		};
+		3F08855418079ADB00736761 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F08855518079ADB00736761 /* DungeonSKTests-Info.plist */,
+				3F08855618079ADB00736761 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F08856318079CE600736761 /* External Source */ = {
+			isa = PBXGroup;
+			children = (
+				3F08857B1807B8DB00736761 /* LFCGzipUtility.h */,
+				3F08857C1807B8DB00736761 /* LFCGzipUtility.m */,
+				3F0885821807BE9900736761 /* cencode.c */,
+				3F0885831807BE9900736761 /* cencode.h */,
+				3F0885781807B8CC00736761 /* JSTileMap.h */,
+				3F0885791807B8CC00736761 /* JSTileMap.m */,
+				3F08857518079D2F00736761 /* TMXGenerator.h */,
+				3F08857618079D2F00736761 /* TMXGenerator.m */,
+				3F08856418079D0F00736761 /* SFMT */,
+			);
+			name = "External Source";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3F08856418079D0F00736761 /* SFMT */ = {
+			isa = PBXGroup;
+			children = (
+				3F08856518079D0F00736761 /* SFMT-alti.h */,
+				3F08856618079D0F00736761 /* SFMT-params.h */,
+				3F08856718079D0F00736761 /* SFMT-params11213.h */,
+				3F08856818079D0F00736761 /* SFMT-params1279.h */,
+				3F08856918079D0F00736761 /* SFMT-params132049.h */,
+				3F08856A18079D0F00736761 /* SFMT-params19937.h */,
+				3F08856B18079D0F00736761 /* SFMT-params216091.h */,
+				3F08856C18079D0F00736761 /* SFMT-params2281.h */,
+				3F08856D18079D0F00736761 /* SFMT-params4253.h */,
+				3F08856E18079D0F00736761 /* SFMT-params44497.h */,
+				3F08856F18079D0F00736761 /* SFMT-params607.h */,
+				3F08857018079D0F00736761 /* SFMT-params86243.h */,
+				3F08857118079D0F00736761 /* SFMT-sse2.h */,
+				3F08857218079D0F00736761 /* SFMT.c */,
+				3F08857318079D0F00736761 /* SFMT.h */,
+			);
+			path = SFMT;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F08852318079ADB00736761 /* DungeonSK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F08855D18079ADB00736761 /* Build configuration list for PBXNativeTarget "DungeonSK" */;
+			buildPhases = (
+				3F08852018079ADB00736761 /* Sources */,
+				3F08852118079ADB00736761 /* Frameworks */,
+				3F08852218079ADB00736761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DungeonSK;
+			productName = DungeonSK;
+			productReference = 3F08852418079ADB00736761 /* DungeonSK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F08854B18079ADB00736761 /* DungeonSKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F08856018079ADB00736761 /* Build configuration list for PBXNativeTarget "DungeonSKTests" */;
+			buildPhases = (
+				3F08854818079ADB00736761 /* Sources */,
+				3F08854918079ADB00736761 /* Frameworks */,
+				3F08854A18079ADB00736761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F08855218079ADB00736761 /* PBXTargetDependency */,
+			);
+			name = DungeonSKTests;
+			productName = DungeonSKTests;
+			productReference = 3F08854C18079ADB00736761 /* DungeonSKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F08851C18079ADB00736761 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Jeremy;
+				TargetAttributes = {
+					3F08854B18079ADB00736761 = {
+						TestTargetID = 3F08852318079ADB00736761;
+					};
+				};
+			};
+			buildConfigurationList = 3F08851F18079ADB00736761 /* Build configuration list for PBXProject "DungeonSK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F08851B18079ADB00736761;
+			productRefGroup = 3F08852518079ADB00736761 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F08852318079ADB00736761 /* DungeonSK */,
+				3F08854B18079ADB00736761 /* DungeonSKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F08852218079ADB00736761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F08853418079ADB00736761 /* InfoPlist.strings in Resources */,
+				3F08854718079ADB00736761 /* Images.xcassets in Resources */,
+				3F0885811807BE5800736761 /* caveAtlas.png in Resources */,
+				3F08854518079ADB00736761 /* Spaceship.png in Resources */,
+				3F08853D18079ADB00736761 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F08854A18079ADB00736761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F08855818079ADB00736761 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F08852018079ADB00736761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0885841807BE9900736761 /* cencode.c in Sources */,
+				3F08857418079D0F00736761 /* SFMT.c in Sources */,
+				3FCA52201864D3990071725B /* MenuController.m in Sources */,
+				3F08854318079ADB00736761 /* dungeonScene.m in Sources */,
+				3F08854018079ADB00736761 /* ViewController.m in Sources */,
+				3F08857A1807B8CC00736761 /* JSTileMap.m in Sources */,
+				3F08857718079D2F00736761 /* TMXGenerator.m in Sources */,
+				3F08853A18079ADB00736761 /* AppDelegate.m in Sources */,
+				3F08857D1807B8DB00736761 /* LFCGzipUtility.m in Sources */,
+				3F08853618079ADB00736761 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F08854818079ADB00736761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F08855A18079ADB00736761 /* DungeonSKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F08855218079ADB00736761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F08852318079ADB00736761 /* DungeonSK */;
+			targetProxy = 3F08855118079ADB00736761 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F08853218079ADB00736761 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F08853318079ADB00736761 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F08853B18079ADB00736761 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F08853C18079ADB00736761 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F08855618079ADB00736761 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F08855718079ADB00736761 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F08855B18079ADB00736761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3F08855C18079ADB00736761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F08855E18079ADB00736761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DungeonSK/DungeonSK-Prefix.pch";
+				INFOPLIST_FILE = "DungeonSK/DungeonSK-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F08855F18079ADB00736761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DungeonSK/DungeonSK-Prefix.pch";
+				INFOPLIST_FILE = "DungeonSK/DungeonSK-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3F08856118079ADB00736761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DungeonSK.app/DungeonSK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DungeonSK/DungeonSK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DungeonSKTests/DungeonSKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3F08856218079ADB00736761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DungeonSK.app/DungeonSK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DungeonSK/DungeonSK-Prefix.pch";
+				INFOPLIST_FILE = "DungeonSKTests/DungeonSKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F08851F18079ADB00736761 /* Build configuration list for PBXProject "DungeonSK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F08855B18079ADB00736761 /* Debug */,
+				3F08855C18079ADB00736761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F08855D18079ADB00736761 /* Build configuration list for PBXNativeTarget "DungeonSK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F08855E18079ADB00736761 /* Debug */,
+				3F08855F18079ADB00736761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F08856018079ADB00736761 /* Build configuration list for PBXNativeTarget "DungeonSKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F08856118079ADB00736761 /* Debug */,
+				3F08856218079ADB00736761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F08851C18079ADB00736761 /* Project object */;
+}
