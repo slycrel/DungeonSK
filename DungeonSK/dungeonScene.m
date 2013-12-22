@@ -218,6 +218,23 @@ static long seed = 1010414;
 {
     UIPanGestureRecognizer *gestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanFrom:)];
     [self.view addGestureRecognizer:gestureRecognizer];
+	
+    UIPinchGestureRecognizer *twoFingersScale = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(twoFingersScale:)];
+    [self.view addGestureRecognizer:twoFingersScale];
+}
+
+
+- (void) twoFingersScale:(UIPinchGestureRecognizer *) recognizer {
+	
+    //Handle scale gesture
+    CGPoint locationInView = [recognizer locationInView:recognizer.view];
+    locationInView = CGPointMake(locationInView.x - recognizer.view.bounds.size.width/2, locationInView.y - recognizer.view.bounds.size.height/2);
+	
+    if ([recognizer state] == UIGestureRecognizerStateBegan || [recognizer state] == UIGestureRecognizerStateChanged)
+	{
+        //Send info to renderViewController
+		[self.map runAction:[SKAction scaleTo:recognizer.scale duration:0]];
+    }	
 }
 
 
